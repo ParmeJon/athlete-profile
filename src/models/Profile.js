@@ -29,7 +29,8 @@ const ProfileSchema = new Schema({
         required: true
     }, 
     sports: [{
-        name: String
+        name: String,
+        type: String
     }],
     about: {
         type: String
