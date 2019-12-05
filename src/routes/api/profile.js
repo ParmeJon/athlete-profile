@@ -3,7 +3,6 @@ const router = express.Router();
 const Profile = require('../../models/Profile')
 
 router.post('/new', async (req, res) => {
-    console.log(req.body)
     try {
         const profile = new Profile(req.body);
         await profile.save()
