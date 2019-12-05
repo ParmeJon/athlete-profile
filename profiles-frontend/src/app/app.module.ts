@@ -4,7 +4,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MatStepperModule } from '@angular/material';
+import {
+  MatStepperModule,
+  MatIconModule,
+  MatButtonModule,
+  MatFormFieldModule
+} from "@angular/material";
 import { HttpClientModule } from '@angular/common/http';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
 import { StepperFormComponent } from './stepper-form/stepper-form.component';
@@ -23,7 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule, 
     ReactiveFormsModule,
     MatStepperModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,28 @@
-<mat-vertical-stepper>
-    <mat-step label="Step 1">
-        Content 1
+<mat-horizontal-stepper linear>
+    <mat-step>
+        <ng-template matStepLabel>Basic Info</ng-template>
+        <form [formGroup]='formGroup1'>
+            <mat-form-field>
+                <input matInput placeholder='Last name, First Name'>
+            </mat-form-field>
+        </form>
+        <button mat-button matStepperNext>Next</button>
     </mat-step>
-    <mat-step label="Step 1">
+    <mat-step>
+        <ng-template matStepLabel>About</ng-template>
         Content 2
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
     </mat-step>
-</mat-vertical-stepper>
+    <mat-step>
+        <ng-template matStepLabel>Handles</ng-template>
+        Content 3
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Review and Submit</ng-template>
+        Content 4
+        <button mat-button matStepperPrevious>Back</button>
+    </mat-step>
+</mat-horizontal-stepper>

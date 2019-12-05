@@ -77,3 +77,12 @@ const DATA_STEP_3 = {
   twitch: {type: 'text', placeholder: 'Social Media Links...'},
   snapchat: {type: 'text', placeholder: 'Social Media Links...'},
 };
+
+const STEP_ITEMS = [
+  { label: "Basic Info", data: DATA_STEP_1 },
+  { label: "About", data: DATA_STEP_2 },
+  { label: 'Handles', data: DATA_STEP_3 },
+  { label: 'Review & Submit', data: {}},
+];
+
+export { STEP_ITEMS }
