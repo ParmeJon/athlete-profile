@@ -41,7 +41,7 @@ const ProfileSchema = new Schema({
     charities: {
         type: String
     },
-    socialMedia: [{
+    handles: [{
         name: String,
         link: String
     }], 
