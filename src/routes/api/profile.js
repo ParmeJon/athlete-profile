@@ -20,15 +20,12 @@ router.get('/', async (req, res) => {
     } catch (e) {
         res.status.send(e)
     }
-    res.send('working get')
 })
 
 router.put('/:id', async (req, res) => {
     const id = req.params.id
-    console.log(req.body)
     try {
         const profile = await Profile.findOneAndUpdate({_id: id}, req.body, {new: true})
-        console.log(profile)
         await profile.save()
         res.status(201).send(profile)
     } catch (e) {
